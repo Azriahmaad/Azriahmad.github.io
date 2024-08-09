@@ -39,9 +39,9 @@
     <div class="container-fluid bg-primary-subtle p-0 jumbotron" style="padding-top: 0 !important; "
         data-aos="fade-down">
         <section id="hero" class="text-center">
-            <img src="image/logo.avif" class="img-thumbnail rounded-circle " alt="My PC">
+            <img src="image/logo.avif" class="img-thumbnail rounded-circle  ms-2 me-2 " alt="My PC">
             <h1 class="display-2 myname">Azri Ahmad</h1>
-            <h6 class="asa"></h6>
+            <h6 class="asa ms-3 me-3"></h6>
         </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#FAF9F6" fill-opacity="1"
@@ -51,24 +51,27 @@
 
     </div>
 
-    <div class="container" data-aos="fade-up" data-aos-duration="2000">
-        <section id="about">
-            <h3 class="text-center">About Me</h3>
-            <div class="row justify-content-center text-center fs-5 mt-5">
-                <div class="col-md col-lg col-xl-6">
+    <section id="about">
+        <div class="container" >
+            <div class=" row text-center ">
+                <div class="col" data-aos="fade-down" data-aos-duration="2000">
+                    <h2>About Me</h2>
+                </div>
+            </div>
+              <div  class="row justify-content-center text-center fs-5 mt-5">
+                <div class="col-md col-lg col-xl-6" data-aos="fade-right" data-aos-duration="2000">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat eos error, placeat
                     ipsam aperiam eaque quidem ducimus atque ea! Adipisci voluptatum rerum perferendis illum rem beatae
                     dolore ipsum at voluptas amet. Odio illo provident at assumenda veniam aperiam reiciendis.
                     Praesentium iure accusantium laudantium debitis quam nemo dicta quos maxime.
                 </div>
-                <div class="col-md col-lg col-xl-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                <div class="col-md col-lg col-xl-6" data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
                     tempore commodi soluta
                     consectetur nostrum corporis assumenda ipsa. Ad, reiciendis deserunt.</div>
             </div>
+        </div>
+    </section>
 
-        </section>
-
-    </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#cfe2ff" fill-opacity="1"
             d="M0,256L48,266.7C96,277,192,299,288,256C384,213,480,107,576,106.7C672,107,768,213,864,229.3C960,245,1056,171,1152,144C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -78,7 +81,7 @@
 
 
     <section id="projects">
-        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container"  >
             <div class="row text-center">
                 <div class="col">
                     <h2>My Projects</h2>
@@ -86,16 +89,16 @@
             </div>
             <div class="row">
                 <div class="col-md-4  mb-3">
-                    <div class="card" style="">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="50">
                         <img src="image/coding.jpg" class="card-img-top" alt="Skill 1">
-                        <div class="card-body">
+                        <div class="card-body" >
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
                         <img src="image/business2.jpg" class="card-img-top" alt="Skill 2">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -104,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="">
+                    <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="150">
                         <img src="image/accounting.jpeg" class="card-img-top" alt="Skill 3">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -124,7 +127,7 @@
         <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <div class="row text-center mb-3">
                 <div class="col">
-                    <h2>Contact Me</h2>
+                    <h2 class="contact">Contact Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -135,24 +138,24 @@
                     </div>
                     <form name="contact-form">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <label for="name" class="form-label nama">Nama Lengkap</label>
                             <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                                 name="nama">
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label email">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" name="email">
                         </div>
-                        <div class="mb-3">
-                            <label for="Number" class="form-label">Nomor</label>
+                        <div class="mb-3 ">
+                            <label for="Number" class="form-label nomor">Nomor</label>
                             <input type="number" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" name="nomor">
                         </div>
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="pesan"
                                 style="height: 100px" name="pesan"></textarea>
-                            <label for="pesan">Pesan</label>
+                            <label for="pesan" class="pesan">Pesan</label>
                         </div>
                         <button type="submit" class="btn btn-primary btn-kirim mt-3 ">Kirim</button>
 
@@ -190,39 +193,45 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-   
-   <script>
-    gsap.registerPlugin(TextPlugin)
-    gsap.to('.asa', { duration: 2, delay: 1.5, text: 'Web Developer | Business and Accounting Expert' })
-    gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'bounce'})
-    gsap.from('.navbar', { duration:1.5, y: '-100%', opacity: 0, ease: 'bounce'})
-    gsap.from('.myname', { duration:1.5, x: '-50', opacity: 0, ease: 'back'})
+
+    <script>
+        gsap.registerPlugin(TextPlugin)
+        gsap.to('.asa', { duration: 2, delay: 1.5, text: 'Web Developer | Business and Accounting Expert' })
+        // gsap.to('.contact', { duration: 1, delay: 1.5, text: 'Contact Me' })
+        // gsap.to('.nama', { duration: 1, delay: 1.5, text: 'Nama Lengkap' })
+        // gsap.to('.email', { duration: 1, delay: 1.5, text: 'Email' })
+        // gsap.to('.nomor', { duration: 1, delay: 1.5, text: 'Nomor' })
+        // gsap.to('.pesan', { duration: 1, delay: 1.5, text: 'Pesan' })
+
+        gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'bounce' })
+        gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' })
+        gsap.from('.myname', { duration: 1.5, x: '-50', opacity: 0, ease: 'back' })
     </script>
 
     <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzylU7rnx6viCOkns1fz7YcT0Kj8IvTfhlsNILuKvIx62Pjdg9QkB-D6_koh6Dac9uGsA/exec'
-            const form = document.forms['contact-form']
-            const btnKirim = document.querySelector('.btn-kirim')
-            const btnLoading = document.querySelector('.btn-loading')
-            const myAlert = document.querySelector('.my-alert')
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzylU7rnx6viCOkns1fz7YcT0Kj8IvTfhlsNILuKvIx62Pjdg9QkB-D6_koh6Dac9uGsA/exec'
+        const form = document.forms['contact-form']
+        const btnKirim = document.querySelector('.btn-kirim')
+        const btnLoading = document.querySelector('.btn-loading')
+        const myAlert = document.querySelector('.my-alert')
 
         form.addEventListener('submit', e => {
-                e.preventDefault()
+            e.preventDefault()
             // ketika tombol submit diklik
             // tampilkan tombol loading hilangkan tombol kirim
             btnLoading.classList.toggle('d-none')
             btnKirim.classList.toggle('d-none')
 
-            fetch(scriptURL, {method: 'POST', body: new FormData(form) })
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                // tampilkan tombol kirim hilangkan tombol loading
-                btnLoading.classList.toggle('d-none')
+                    // tampilkan tombol kirim hilangkan tombol loading
+                    btnLoading.classList.toggle('d-none')
                     btnKirim.classList.toggle('d-none')
-            // tampilkan Alert
-            myAlert.classList.toggle('d-none')
-            // reset form
-            form.reset()
-            console.log('Success!', response)
+                    // tampilkan Alert
+                    myAlert.classList.toggle('d-none')
+                    // reset form
+                    form.reset()
+                    console.log('Success!', response)
                 })
                 .catch(error => console.error('Error!', error.message))
         })
