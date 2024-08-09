@@ -52,20 +52,21 @@
     </div>
 
     <section id="about">
-        <div class="container" >
+        <div class="container">
             <div class=" row text-center ">
                 <div class="col" data-aos="fade-down" data-aos-duration="2000">
                     <h2>About Me</h2>
                 </div>
             </div>
-              <div  class="row justify-content-center text-center fs-5 mt-5">
+            <div class="row justify-content-center text-center fs-5 mt-5">
                 <div class="col-md col-lg col-xl-6" data-aos="fade-right" data-aos-duration="2000">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat eos error, placeat
                     ipsam aperiam eaque quidem ducimus atque ea! Adipisci voluptatum rerum perferendis illum rem beatae
                     dolore ipsum at voluptas amet. Odio illo provident at assumenda veniam aperiam reiciendis.
                     Praesentium iure accusantium laudantium debitis quam nemo dicta quos maxime.
                 </div>
-                <div class="col-md col-lg col-xl-6" data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                <div class="col-md col-lg col-xl-6" data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Labore
                     tempore commodi soluta
                     consectetur nostrum corporis assumenda ipsa. Ad, reiciendis deserunt.</div>
             </div>
@@ -81,24 +82,24 @@
 
 
     <section id="projects">
-        <div class="container"  >
+        <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2>My Projects</h2>
+                    <h2 class="projects "></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4  mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="50">
+                    <div class="card" data-aos="fade-up-right" data-aos-duration="1000">
                         <img src="image/coding.jpg" class="card-img-top" alt="Skill 1">
-                        <div class="card-body" >
+                        <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000">
                         <img src="image/business2.jpg" class="card-img-top" alt="Skill 2">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -107,7 +108,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="150">
+                    <div class="card" data-aos="fade-up-left" data-aos-duration="1000">
                         <img src="image/accounting.jpeg" class="card-img-top" alt="Skill 3">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -191,12 +192,24 @@
         );
     </script>
 
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 
     <script>
         gsap.registerPlugin(TextPlugin)
         gsap.to('.asa', { duration: 2, delay: 1.5, text: 'Web Developer | Business and Accounting Expert' })
+        gsap.to('.projects', { duration: 1, delay: 1.5, text: 'My Projects' })
         // gsap.to('.contact', { duration: 1, delay: 1.5, text: 'Contact Me' })
         // gsap.to('.nama', { duration: 1, delay: 1.5, text: 'Nama Lengkap' })
         // gsap.to('.email', { duration: 1, delay: 1.5, text: 'Email' })
